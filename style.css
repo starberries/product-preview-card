@@ -28,6 +28,8 @@ body {
 h1, .price-discount {
     color: var(--header-color);
     font-family: 'Fraunces', serif;
+    font-size: xx-large;
+    font-weight: bolder;
 }
 
 .card {
@@ -38,13 +40,19 @@ h1, .price-discount {
     border-radius: 1rem;
 }
 
-.card div {
-    margin: 1.5rem;
+.content {
+    margin: 1rem 2rem;
 }
 
 .type {
     display: block;
+    font-size: 12px;
     text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+.price-discount {
+    color: var(--primary-color);
 }
 
 .btn {
@@ -54,6 +62,7 @@ h1, .price-discount {
     background: var(--primary-color);
 }
 
+
 .attribution {
     display: flex;
     flex-direction: column;
@@ -61,3 +70,8 @@ h1, .price-discount {
     text-align: center;
 }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+/* Utilities */
+.my-1 {
+    margin: 1rem 0;
+}
