@@ -33,8 +33,13 @@ h1, .price-discount {
 .card {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 2rem 1rem;
     background: white;
+    border-radius: 1rem;
+}
+
+.card div {
+    margin: 1.5rem;
 }
 
 .type {
@@ -43,10 +48,10 @@ h1, .price-discount {
 }
 
 .btn {
-    display: inline-block;
+    width: fit-content;
     color: white;
     text-decoration: none;
-    background: var(--bg-color);
+    background: var(--primary-color);
 }
 
 .attribution {
