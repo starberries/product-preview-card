@@ -5,6 +5,7 @@
     --bg-color: hsl(30, 38%, 92%);
     --header-color: hsl(212, 21%, 14%);
     --font-color: hsl(228, 12%, 48%);
+    --btn-height: 3rem;
 }
 
 * {
@@ -56,12 +57,21 @@ h1, .price-discount {
 }
 
 .btn {
-    width: fit-content;
+    display: inline-block;
+    width: 100%;
+    height: 3rem;
+    padding: calc(((var(--btn-height) - 1em) / 2) - 0.125rem) 0;
     color: white;
+    text-align: center;
     text-decoration: none;
+    font-weight: bold;
     background: var(--primary-color);
+    border-radius: 0.5rem;
 }
 
+.btn i {
+    padding-right: 0.7rem;
+}
 
 .attribution {
     display: flex;
