@@ -5,6 +5,7 @@
     --bg-color: hsl(30, 38%, 92%);
     --header-color: hsl(212, 21%, 14%);
     --font-color: hsl(228, 12%, 48%);
+    --active-color: hsl(165, 36%, 20%);
     --btn-height: 3rem;
 }
 
@@ -65,8 +66,13 @@ h1, .price-discount {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    background: var(--primary-color);
+    background-color: var(--primary-color);
     border-radius: 0.5rem;
+    transition: 0.1s;
+}
+
+.btn:active {
+    background-color: var(--active-color);
 }
 
 .btn i {
