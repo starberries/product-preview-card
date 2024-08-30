@@ -22,6 +22,7 @@
 body {
     display: flex;
     flex-direction: column;
+    height: 100vh;
     color: var(--font-color);
     font-family: 'Montserrat', sans-serif;
     background: var(--bg-color);
@@ -43,10 +44,17 @@ h1, .price-discount {
     border-radius: 1rem;
 }
 
-.card img {
+.img-container {
     width: 100%;
-    height: 100%;
+}
+
+.img-container img {
+    width: 100%;
     border-radius: 1rem 1rem 0 0;
+}
+
+.img-desktop {
+    display: none;
 }
 
 .content {
@@ -97,6 +105,8 @@ h1, .price-discount {
 }
 
 .attribution {
+    position: absolute;
+    bottom: 0;
     display: flex;
     flex-direction: column;
     font-size: 11px;
@@ -107,4 +117,38 @@ h1, .price-discount {
 /* Utilities */
 .my-1 {
     margin: 1rem 0;
+}
+
+@media(min-width: 48rem) {
+    body {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        max-width: 42rem;
+        flex-direction: row;
+    }
+
+    .content {
+        width: 40%;
+    }
+    
+    .img-container {
+        width: 50%;
+    }
+
+    .img-container img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    .img-desktop {
+        display: block;
+    }
+
+    .img-mobile {
+        display: none;
+    }
 }
